@@ -1,0 +1,11 @@
+#if($r.isTrue($withinCourse))
+	<p>$r.translate("dialog.modal.bg.remove.course.text",$identities)</p>		
+#else
+	<p>$r.translate("dialog.modal.bg.remove.text",$identities)</p>
+#end
+$r.render("options")
+<div class="o_button_group">
+	$r.render("cancel")
+	$r.render("confirm.leave")
+</div>
+
